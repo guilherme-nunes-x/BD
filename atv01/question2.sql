@@ -25,5 +25,5 @@ quilometragem int,
 codModelo int,
 foreign key (codModelo) references modelo (codModelo)
 );
- show tables;
-desc modelo;
+ -- show tables;
+-- desc modelo;
