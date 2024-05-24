@@ -54,3 +54,20 @@ foreign key (codDepart) references departamento(CodDepart)
  foreign key (matricula) references aluno(matricula),
  foreign key (codCurso) references curso(codCurso)
  );
+
+create table concluida (
+matricula varchar (25),
+codDisciplina char(15),
+ primary key (matricula, codDisciplina),
+ foreign key (matricula) references aluno(matricula),
+ foreign key (codDisciplina) references disciplina(codDisciplina)
+);
+
+create table oferece (
+codCurso char(15),
+codDisciplina char(15), 
+tipoDisciplina varchar(25),
+primary key (codCurso, codDisciplina),
+foreign key (codCurso) references curso(codCurso),
+ foreign key (codDisciplina) references disciplina(codDisciplina)
+ );
