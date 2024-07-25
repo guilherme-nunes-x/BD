@@ -10,7 +10,9 @@ create table chefe (
 	salario float not null,
 	carga_time int not null
 );
-/*chefe(CPF, nome, nascimento, especialidade, admissao, salario, chs)*/
-insert into chefe values('12345678912','leonardo','2006/12/08','macarrao','2020/12/08','12000.00','23' );
-show tables;
-desc chefe;
+
+/* Esquema geral: chefe(CPF, nome, nascimento, especialidade, admissao, salario, chs)*/
+/*Forma de inserir dados em um bd*/
+insert into chefe values('12345673241','roberio','2004/09/28','pizza','2019/08/18','15000.00','56' );
+/*Veriifca dados dos dados cadastrados*/
+select * from restaurante_italiano.chefe;
